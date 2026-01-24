@@ -1,43 +1,123 @@
-🏎️ F1 Race Winner Prediction (Python, Machine Learning)
+🏎️ F1 Race Winner Prediction
 
-A predictive model built using Random Forest to forecast Formula 1 race winners based on historical race, qualifying, and driver data.
+(Python, Machine Learning, XGBoost, Gradio)
+
+A machine learning project that predicts Formula 1 race winners using historical race, qualifying, and driver data.
+The backend model is built with XGBoost, and the project includes an interactive gradient-based frontend using Gradio for real-time predictions.
 
 ✨ Features
 
-Preprocessed and merged multiple datasets: drivers, races, results, qualifying
+Merged and preprocessed multiple datasets:
 
-Performed data cleaning, feature engineering, and handled missing values
+Drivers
 
-Created a target variable for race winners (1 = winner, 0 = others)
+Races
 
-Built a Random Forest model with hyperparameter tuning
+Results
 
-Evaluated performance using accuracy, F1-score, and ROC-AUC
+Qualifying
 
-Visualized top drivers, circuits, and race trends
+Performed:
 
-Plotted feature importances to identify key factors influencing race outcomes
+Data cleaning and handling of missing values
 
-Includes interactive prediction function: predict win probability for any driver, year, grid/qualifying position, and race round
+Feature engineering for race and driver performance
+
+Target variable creation (Winner = 1, Non-winner = 0)
+
+Built an XGBoost (XGBoostClassifier) model for winner prediction
+
+Tuned model parameters for improved performance
+
+Evaluated model using:
+
+Accuracy
+
+F1-Score
+
+ROC-AUC
+
+Visualized:
+
+Top drivers and circuits
+
+Race performance trends
+
+Feature importance to identify key winning factors
+
+🚀 Interactive Gradient Frontend:
+
+User inputs driver, year, grid/qualifying position, and race round
+
+Model returns win probability instantly via a clean UI
 
 🛠 Concepts & Tools
+🔹 Programming & Libraries
 
-Python Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+Python
 
-Machine Learning: Random Forest, Feature Engineering, Model Evaluation
+pandas, numpy
 
-Data Visualization: Bar plots, line plots, scatter plots with trend line
+matplotlib, seaborn
+
+🔹 Machine Learning
+
+XGBoost (Gradient Boosting)
+
+Feature Engineering
+
+Classification & Model Evaluation
+
+🔹 Frontend & Deployment
+
+Gradio (Gradient-based interactive UI)
+
+Model inference via user input
 
 🚀 How to Use
 
-Load datasets (drivers, races, results, qualifying).
+Load datasets:
 
-Run the preprocessing and feature engineering script.
+drivers.csv
 
-Train the Random Forest model.
+races.csv
 
-Use the predict_driver_win_for_year() function to predict win probability for a given driver and race scenario.
+results.csv
+
+qualifying.csv
+
+Run preprocessing and feature engineering scripts.
+
+Train the XGBoost model.
+
+Launch the Gradio interface.
+
+Enter:
+
+Driver
+
+Season year
+
+Grid / qualifying position
+
+Race round
+
+Get predicted win probability instantly.
 
 📌 Purpose
 
-This project demonstrates end-to-end data science workflow: cleaning, merging, modeling, evaluation, visualization, and interactive prediction — applied to a real-world sports analytics problem.
+This project demonstrates a complete end-to-end machine learning workflow:
+
+Data cleaning & merging
+
+Feature engineering
+
+Model training with XGBoost
+
+Performance evaluation
+
+Visualization
+
+User-friendly gradient frontend for real-world interaction
+
+Applied to a sports analytics problem in Formula 1 racing.
